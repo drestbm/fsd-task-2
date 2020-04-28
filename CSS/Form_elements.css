@@ -1,0 +1,80 @@
+.form-elements-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding: 145px 140px;
+    min-width: 300px;
+    max-width: 1920px;
+}
+
+.form-elements-wrapper__colum-1 {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-row-gap: 20px;
+}
+
+.rich-input-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 15px 44px;
+    grid-row-gap: 5px;
+    grid-template-areas: 
+        "main-text side-text"
+        "input input";
+    width: 320px;
+}
+
+.main-text {
+    grid-area: main-text;
+}
+
+.side-text {
+    justify-self: end;
+    grid-area: side-text;
+    color: rgba(31, 32, 65, 0.5);
+}
+.input {
+    grid-area: input;
+}
+
+.text-field {
+    width: 320px;
+    height: 44px;
+    padding: 13px 15px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    outline:none;
+}
+
+.text-field:hover,
+.text-field:focus {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 44px;
+    width: 320px;
+    height: 44px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.dropdown-field {
+    width: 261px;
+    margin: 13px 0 13px 15px;
+    border: none;
+}
+.dropdown-button {
+    width: 44px;
+    height: 44px;
+    vertical-align: middle;
+    text-align: center;
+}
